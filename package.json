@@ -1,0 +1,31 @@
+{
+  "name": "shelly-transmitter",
+  "description": "API Endpoint for shelly devices to transmit sensordata to various other endpoints",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "author": "Hendrik Schellenberger <hkonitzer@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hkonitzer/shelly-transmitter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hkonitzer/shelly-transmitter/issues"
+  },
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "bent": "^7.3.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "hbs": "^4.1.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "nconf": "^0.10.0"
+  }
+}

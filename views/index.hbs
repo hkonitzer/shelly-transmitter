@@ -1,0 +1,22 @@
+<h1>shelly-transmitter</h1>
+<p>Latest measurements:</p>
+<table>
+    <thead>
+        <tr>
+            <th>Device</th>
+            <th>Temperature</th>
+            <th>Humidity</th>
+            <th>Timestamp</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each devices as | device deviceName |}}
+            <tr>
+                <td>{{deviceName}}</td>
+                <td>{{device.temp}}</td>
+                <td>{{device.hum}}</td>
+                <td>{{date2string device.ts}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
