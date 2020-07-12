@@ -1,7 +1,7 @@
 {
   "name": "shelly-transmitter",
   "description": "API Endpoint for shelly devices to transmit sensordata to various other endpoints",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "license": "MIT",
   "author": "Hendrik Schellenberger <hkonitzer@gmail.com>",

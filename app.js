@@ -5,8 +5,6 @@ const cookieParser = require('cookie-parser');
 const debug = require('debug')('shelly-transmitter:app');
 
 const nconf = require('nconf');
-nconf.add('global', {type: 'file', file: './apiconfig_' + process.env.NODE_ENV + '.json'});
-debug(`Lese Konfiguration für Umgebung von Schlüssel "${'./apiconfig_' + process.env.NODE_ENV + '.json'}"`);
 
 const indexRouter = require('./routes/index');
 

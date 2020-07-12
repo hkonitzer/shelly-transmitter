@@ -3,10 +3,18 @@
 /**
  * Module dependencies.
  */
-
-const app = require('../app');
 const debug = require('debug')('shelly-transmitter:server');
 const http = require('http');
+
+/**
+ * Configuration
+ */
+const nconf = require('nconf');
+nconf.add('global', {type: 'file', file: './apiconfig_' + process.env.NODE_ENV + '.json'});
+debug(`Lese Konfiguration für Umgebung von Schlüssel "${'./apiconfig_' + process.env.NODE_ENV + '.json'}"`);
+
+
+const app = require('../app');
 
 /**
  * Get port from environment and store in Express.
